@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../New folder (2)/style.css">
+    <title>login|form</title>
+</head>
+<br>
+<br>
+<center>
+<body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<form class="box" action="login.html"  method = "POST">
+
+<h1>
+Login
+</h1>
+<br>
+<br>
+<br>
+<input type ="text" name="" placeholder="Enter username"  id="username">
+<input type ="pass" name="" placeholder="Enter password"  id="password">
+<input type ="submit" name="" value="Login" onclick="validate()">
+
+</form>
+<script>
+function validate()
+{
+	var text = "Jasmin"; username= document.getElementById('username').value;
+	var pass = "Juaneza20"; password= document.getElementById('password').value;
+	
+	if(text == username && pass == password)
+	{
+		alert("ACCESS GRANTED!");
+        
+	}
+	else if (text == username && pass !== password)
+	{
+		alert("INVALID PASSWORD");
+	}
+	else if(pass == password && text !== username)
+	{
+		alert("INVALID USERNAME");
+	}
+	else{
+		alert("ACCESS DENIED!");
+	}
+
+
+}
+</script>
+
+</body>
+</html>
+</center>
